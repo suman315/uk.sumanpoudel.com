@@ -1,0 +1,186 @@
+.scene {
+	max-width: 700px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+body{
+	margin:0;
+	padding:0px;
+}
+body a{
+	text-decoration: inherit;
+	color: inherit;
+}
+body section {
+	display: block;
+	width:100%;
+	height: auto;
+	clear: both;
+}
+.mainNav{
+	display: block;
+	position: fixed;
+	top:2%;
+	left:0;
+	background-color:rgba(207,207,207,1.00);
+	background-image:url(../img/navbackground.jpg);
+	width: auto;
+	overflow: visible;
+	border-radius: 10px;
+	z-index: 9999999;
+	
+}
+.mainNav ul {
+	list-style-type:none;
+	text-align: center;
+	padding: 10px 0px 10px 0px;
+	margin: 0px;
+}
+.mainNav ul li{
+	margin-bottom: 10px;
+	padding: 3px;
+}
+
+.mainNav ul li a{
+	padding: 5px 20px 5px 20px;
+}
+.mainNav ul li:hover{
+	border-radius: 10px;
+	animation: menubackground 1s linear;
+	-webkit-animation: menubackground 1s linear;
+	animation-fill-mode:forwards;
+-webkit-animation-fill-mode:forwards; 
+}
+@keyframes menubackground {
+	from {background-color:#E4E2E2; width: 100%; color:#000000;}
+	to {background-color:#563232; width: 150%; color:#FFFFFF;  }
+}
+@-webkit-keyframes menubackground {
+	from {background-color:#E4E2E2; width: 100%; color:#000000;}
+	to{background-color:#563232; width: 150%; color:#FFFFFF;}
+}
+#home{
+	 background: url('../img/earthmap.png') no-repeat;
+	 overflow: hidden;
+}
+.topbar{
+	position: relative;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	overflow: visible;
+}
+
+.homefeature{
+	width: 100%;
+	margin-bottom: 10px;
+}
+.profilepic{
+		margin-top: 5%;
+	border-radius: 10px;
+	position: fixed;
+	height: 184px;
+	width: 200px;
+	margin-left: 80%;
+	display: none;
+}
+#welcome{
+	width: 50%;
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	z-index: 99998;
+	color: rgba(174, 12, 12, 0.8);
+}
+#welcome span{
+	font-size: 1000%;
+	display: none;
+	font-family: Georgia, Times, "Times New Roman", serif;
+	
+}
+.responsiveimg{
+	margin-top: 5%;
+	margin-left: 2%;
+	margin-right: 80%;
+	display: none;
+	position: fixed;
+}
+.matrix{
+	position: relative;
+	margin-top: 22%;
+	width: 100%;
+	overflow: hidden;
+	height: 418px;
+}
+.matrix img{
+	margin-top: -418px;
+	position: relative;
+	width: 100%;
+	animation: matrixmove 10s linear 999;
+	-webkit-animation: matrixmove 10s linear 999;
+}
+@keyframes matrixmove {
+	0%{ top:0px; }
+	100%{ top:418px; }
+}
+@-webkit-keyframes matrixmove {
+	0%{ top:0px; }
+	100%{ top:418px; }
+}
+
+/* for about me page */
+#aboutme{
+	padding-top: 50px;
+ background-color: rgba(135,206, 250, 0.9);
+ overflow: auto;
+}
+.aboutmecontent{
+	position: relative;
+	width: 100%;
+	display: block;
+	padding-top: 20px;
+
+}
+.myimage{
+	margin-top: 5%;
+	position: relative;
+	width: 30%;
+	border-radius: 30px;
+	float: left;
+	margin-left: 8%;
+}
+	
+.discription{
+	position: relative;
+	width: 50%;
+	color: #000000;
+	float: right;
+	margin-right: 5%;
+	text-align: left;
+	font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
+	font-size: 20px;
+}
+.clouds{
+	padding-top: 20px;
+	width: 100%;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+
+
+
+
+
+
+
+#page3{
+	background-color:#C12E30;
+	}
+#page4{
+	background-color:#6E6666;
+}
+#page5{
+	background-color:#3A1515;
+}
