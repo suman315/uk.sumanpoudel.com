@@ -7,6 +7,7 @@
 body{
 	margin:0;
 	padding:0px;
+	font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
 }
 body a{
 	text-decoration: inherit;
@@ -23,8 +24,8 @@ body section {
 	position: fixed;
 	top:2%;
 	left:0;
-	background-color:rgba(207,207,207,1.00);
-	background-image:url(../img/navbackground.jpg);
+	color: #D8D8D8;
+	background-color:rgba(34, 103, 103,1.00);
 	width: auto;
 	overflow: visible;
 	border-radius: 10px;
@@ -46,51 +47,24 @@ body section {
 	padding: 5px 20px 5px 20px;
 }
 .mainNav ul li:hover{
-	border-radius: 10px;
-	animation: menubackground 1s linear;
-	-webkit-animation: menubackground 1s linear;
-	animation-fill-mode:forwards;
--webkit-animation-fill-mode:forwards; 
-}
-@keyframes menubackground {
-	from {background-color:#E4E2E2; width: 100%; color:#000000;}
-	to {background-color:#563232; width: 150%; color:#FFFFFF;  }
-}
-@-webkit-keyframes menubackground {
-	from {background-color:#E4E2E2; width: 100%; color:#000000;}
-	to{background-color:#563232; width: 150%; color:#FFFFFF;}
-}
+	color: #800000;
+	background-color: #ffffff;
+	}
 #home{
-	 background: url('../img/earthmap.png') no-repeat;
-	 overflow: hidden;
-}
-.topbar{
-	position: relative;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 50%;
-	overflow: visible;
+margin-bottom: 0px;
+padding-bottom: 0px;
+background-image: url('../img/logobackground.png');
+background-size: 100% 100%;
+background-repeat: no-repeat;
+background-color: rgba(211, 211, 211, 0.5);
+overflow: hidden;
+height: 800px;
 }
 
-.homefeature{
-	width: 100%;
-	margin-bottom: 10px;
-}
-.profilepic{
-		margin-top: 5%;
-	border-radius: 10px;
-	position: fixed;
-	height: 184px;
-	width: 200px;
-	margin-left: 80%;
-	display: none;
-}
 #welcome{
 	width: 50%;
-	position: relative;
-	margin-right: auto;
-	margin-left: auto;
+	position: absolute;
+	margin-left: 25%;
 	z-index: 99998;
 	color: rgba(174, 12, 12, 0.8);
 }
@@ -100,35 +74,26 @@ body section {
 	font-family: Georgia, Times, "Times New Roman", serif;
 	
 }
-.responsiveimg{
-	margin-top: 5%;
-	margin-left: 2%;
-	margin-right: 80%;
-	display: none;
-	position: fixed;
-}
-.matrix{
+.scene{
 	position: relative;
-	margin-top: 22%;
+	margin: 0px;
+	padding: 0px;
 	width: 100%;
-	overflow: hidden;
-	height: 418px;
+	animation: mainrotate 20s linear 999;
+	-webkit-animation: mainrotate 40s linear 999;
 }
-.matrix img{
-	margin-top: -418px;
-	position: relative;
-	width: 100%;
-	animation: matrixmove 10s linear 999;
-	-webkit-animation: matrixmove 10s linear 999;
+@keyframes mainrotate {
+	0%{ transform: translateX(0px) scale(1,1);}
+	50%{transform: translateX(20%) scale(1.1,1.1);}
+	100%{ transform: translateX(0px) scale(1,1);}
+	
 }
-@keyframes matrixmove {
-	0%{ top:0px; }
-	100%{ top:418px; }
+@-webkit-keyframes mainrotate {
+	0% { -webkit-transform: translateX(0px) scale(1,1);}
+	50% { -webkit-transform: translateX(20%) scale(1.1,1.1);}
+	100% { -webkit-transform: translateX(0px) scale(1,1);}
 }
-@-webkit-keyframes matrixmove {
-	0%{ top:0px; }
-	100%{ top:418px; }
-}
+
 
 /* for about me page */
 #aboutme{
@@ -144,12 +109,13 @@ body section {
 
 }
 .myimage{
-	margin-top: 5%;
+	margin-top: 100px;
 	position: relative;
 	width: 30%;
 	border-radius: 30px;
 	float: left;
 	margin-left: 8%;
+	z-index: 555;
 }
 	
 .discription{
@@ -170,17 +136,59 @@ body section {
 }
 
 
+/* for education part */
 
-
-
-
-
-#page3{
+#education{
 	background-color:#C12E30;
+	margin: 0px;
+	padding: 0px;
+	overflow: auto;
 	}
-#page4{
-	background-color:#6E6666;
+
+.bookimg{
+	position: absolute;
+	margin: 0px 0px 0px 200px;
+	display: none;
 }
-#page5{
-	background-color:#3A1515;
+.education{
+	padding: 100px 30px 50px 20px;
+	width: 60%;
+	float: right;
+}
+/* for resume page */
+#resume{
+	background-color:rgba(153, 255, 255, 1);
+	overflow: auto;
+}
+.resumecontent{
+	padding: 100px 20px 20px 10px;
+	width:65%;
+	float: right;
+}
+.resumeside{
+	padding-top: 0px;
+	margin-left: 10%;
+	width: 10%;
+	float:left;
+}
+.resumebtn{
+	border-radius: 10px;
+	height:150px;
+	width: 250px;
+	cursor: pointer;
+	 box-shadow: 5px 5px 5px #5882FA;
+}
+
+/* for contact me page */
+#contact{
+	background-color:#cccccc;
+}
+#contactdiscription{
+	text-align: center;
+	padding-top: 50px;
+}
+#googleMap{
+	display: block;
+	width: 100%;
+	height: 500px;
 }
